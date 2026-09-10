@@ -6,7 +6,7 @@
 This lab is simulating two set of sites in two different countries, Argentina with Buenos Aires, Cordoba and Mendoza. On the other side you have Poland with Warszawa, Bielsko, Wrocław, Kraków and Katowice.
 
 ## Control plane
-For this use case we are using one validator, one controller and one manager
+For this use case we are using one validator, one controller and one manager.
 
 ## Design constraints
 - Traffic between countries will be able to flow via Metro Ethernet or Internet. Metro should be preferable option.
