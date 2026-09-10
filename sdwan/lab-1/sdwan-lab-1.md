@@ -78,7 +78,7 @@ For the Metro ethernet we will use the subnet 172.16.1.0/24 and each site will h
 
 For the internet cloud we will use the range 100.64.0.0/24 with the last octet same as site ID. The control plane ips are assigned arbitrarily as follows:
 
-| Site    | MPLS interface    |
+| Site    | Internet interface    |
 | :--------| :--------:| 
 | BUE    | 100.64.0.1/24    |
 | COR    | 100.64.0.11/24    |
