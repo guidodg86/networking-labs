@@ -1,9 +1,15 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="WOSzNzl3hcj9LFHF-qIJ">
-    <mxGraphModel dx="1988" dy="1119" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
+    <mxGraphModel dx="337" dy="228" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="fe_yzsjUHpOu5uHBlP5R-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" value="" vertex="1">
+          <mxGeometry height="840" width="680" x="910" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="fe_yzsjUHpOu5uHBlP5R-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;labelPosition=right;verticalLabelPosition=top;align=left;verticalAlign=bottom;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="840" width="910" x="1990" y="10" as="geometry" />
+        </mxCell>
         <mxCell id="Zm-KKRvOj3EGroBnD67W-13" edge="1" parent="1" source="Zm-KKRvOj3EGroBnD67W-1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=4;curved=0;" target="Zm-KKRvOj3EGroBnD67W-11" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -102,7 +108,7 @@
         <mxCell id="sL5J0ySKuvbsttcekE7n-14" connectable="0" parent="1" style="group" value="" vertex="1">
           <mxGeometry height="174" width="130" x="2360" y="70" as="geometry" />
         </mxCell>
-        <mxCell id="sL5J0ySKuvbsttcekE7n-15" parent="sL5J0ySKuvbsttcekE7n-14" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#d0eefb, #173d4d);strokeColor=#10739e;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="Varsovia - WAW&lt;div&gt;Site ID = 31&lt;/div&gt;" vertex="1">
+        <mxCell id="sL5J0ySKuvbsttcekE7n-15" parent="sL5J0ySKuvbsttcekE7n-14" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#d0eefb, #173d4d);strokeColor=#10739e;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="Warszawa - WAW&lt;div&gt;Site ID = 31&lt;/div&gt;" vertex="1">
           <mxGeometry height="174" width="130" as="geometry" />
         </mxCell>
         <mxCell id="sL5J0ySKuvbsttcekE7n-16" parent="sL5J0ySKuvbsttcekE7n-14" style="sketch=0;points=[[0.5,0,0],[1,0.5,0],[0.5,1,0],[0,0.5,0],[0.145,0.145,0],[0.8555,0.145,0],[0.855,0.8555,0],[0.145,0.855,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.rect;prIcon=router;fillColor=#FAFAFA;strokeColor=#005073;" value="" vertex="1">
@@ -117,7 +123,7 @@
         <mxCell id="sL5J0ySKuvbsttcekE7n-19" connectable="0" parent="1" style="group" value="" vertex="1">
           <mxGeometry height="174" width="130" x="2050" y="590" as="geometry" />
         </mxCell>
-        <mxCell id="sL5J0ySKuvbsttcekE7n-20" parent="sL5J0ySKuvbsttcekE7n-19" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#d0eefb, #173d4d);strokeColor=#10739e;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;" value="Krakow - KRK&lt;div&gt;Site ID = 41&lt;/div&gt;" vertex="1">
+        <mxCell id="sL5J0ySKuvbsttcekE7n-20" parent="sL5J0ySKuvbsttcekE7n-19" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#d0eefb, #173d4d);strokeColor=#10739e;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;" value="Kraków - KRK&lt;div&gt;Site ID = 41&lt;/div&gt;" vertex="1">
           <mxGeometry height="174" width="130" as="geometry" />
         </mxCell>
         <mxCell id="sL5J0ySKuvbsttcekE7n-21" parent="sL5J0ySKuvbsttcekE7n-19" style="sketch=0;points=[[0.5,0,0],[1,0.5,0],[0.5,1,0],[0,0.5,0],[0.145,0.145,0],[0.8555,0.145,0],[0.855,0.8555,0],[0.145,0.855,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.rect;prIcon=router;fillColor=#FAFAFA;strokeColor=#005073;" value="" vertex="1">
@@ -270,6 +276,12 @@
               <mxPoint x="2441.9" y="280" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="fe_yzsjUHpOu5uHBlP5R-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Poland&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="2810" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fe_yzsjUHpOu5uHBlP5R-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Argentina&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="938" y="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
