@@ -16,10 +16,11 @@ For this use case we are using one validator, one controller and one manager.
 - Poland sites will form a full mesh topology
 - Poland edge devices are cEdge, and Argentina are vEdge
 - Each site has a core router with /24 subnets as loopback and one more subnet with the ubuntu machine
-- We will have one subnet for each enviroment on each site. The Enviroments will be DEV, UAT, PROD, USERS and SERVICES.
+- We will have one subnet for each environment on each site. The Environments will be DEV, UAT, PROD, USERS and SERVICES.
+- Argentina sites will do OSPF with the SDWAN edges. Poland will do BGP.
 
 ## Subnetting and vpn scheme
-Each internal site aggregate subnet will be a /16 from 10.0.0.0/8 where second octect is site id:
+Each internal site aggregate subnet will be a /16 from 10.0.0.0/8 where second octet is site id:
 
 | Site    | Aggregate |
 | :--------| :-------: |
@@ -34,7 +35,7 @@ Each internal site aggregate subnet will be a /16 from 10.0.0.0/8 where second o
 
 For each one of the subnets, the third octet will correspond with the vpn number, following the table
 
-| Enviroment    | VPN ID |
+| Environment    | VPN ID |
 | :--------| :-------: |
 | DEV | 10    |
 | UAT | 20     |
