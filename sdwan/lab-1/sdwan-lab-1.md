@@ -69,6 +69,7 @@ For the MPLS cloud we will use the subnet 172.16.0.0/24. The router interface wi
 | controller    | 172.16.0.100/24    |
 | validator    | 172.16.0.101/24    |
 | manager    | 172.16.0.102/24    |
+| ubuntu root cert    | 172.16.0.103/24    |
 
 For the Metro ethernet we will use the subnet 172.16.1.0/24 and each site will have the interface same as site ID, as follows:
 
