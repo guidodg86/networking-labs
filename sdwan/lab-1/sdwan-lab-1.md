@@ -92,3 +92,18 @@ For the internet cloud we will use the range 100.64.0.0/24 with the last octet s
 | controller    | 100.64.0.100/24    |
 | validator    | 100.64.0.101/24    |
 | manager    | 100.64.0.102/24    |
+
+For the system IPs we will use the following and the org-id will be `guido-velez`
+
+| Site    | system IP    | site ID    |
+| :--------| :--------:|  :--------:| 
+| BUE    | 1.1.1.4   | 1 |
+| COR    | 1.1.1.11    | 11 |
+| MDZ    | 1.1.1.21    | 21 |
+| WAW    | 1.1.1.31    | 31 |
+| KRK    | 1.1.1.41    | 41 |
+| WRO    | 1.1.1.51    | 51 |
+| KTW    | 1.1.1.61    | 61 |
+| controller    | 1.1.1.2    | 1 |
+| validator    | 1.1.1.3   | 1 |
+| manager    | 1.1.1.1    | 1 |
