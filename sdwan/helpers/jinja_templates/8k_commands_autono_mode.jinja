@@ -1,0 +1,14 @@
+tclsh
+puts [open "bootflash:ROOTCA.pem" w+] {
+{{ certificate }}
+}
+!
+puts [open "bootflash:ciscosdwan_cloud_init.cfg" w+] {
+#cloud-config 
+vinitparam:  
+ - uuid : {{ uuid }} 
+ - otp : {{ otp }} 
+ - vbond : {{ vbond }} 
+ - org : {{ organization_name }} 
+}
+controller-mode enable

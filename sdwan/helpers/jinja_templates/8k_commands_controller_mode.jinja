@@ -1,0 +1,28 @@
+request platform software sdwan root-cert-chain install bootflash:ROOTCA.pem 
+!
+config-transaction
+!
+hostname {{ hostname }}
+! 
+int GigabitEthernet1 
+  ip address {{ ip_address }} {{ mask }} 
+  no shut 
+! 
+system 
+  system-ip {{ system_ip }}
+  site-id {{ site_id }}
+  organization-name {{ organization_name }}
+  vbond {{ vbond }}
+!
+sdwan 
+int GigabitEthernet1 
+  tunnel-interface 
+  color mpls 
+  encapsulation ipsec 
+! 
+interface Tunnel 1 
+  ip unnumbered GigabitEthernet1 
+  tunnel source GigabitEthernet1 
+  tunnel mode sdwan 
+commit 
+
