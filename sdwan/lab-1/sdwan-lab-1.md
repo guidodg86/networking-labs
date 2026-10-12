@@ -38,20 +38,21 @@ For each one of the subnets, the third octet will correspond with the vpn number
 | Environment    | VPN ID |
 | :--------| :-------: |
 | DEV | 10    |
-| UAT | 20     |
-| PROD | 30   |
-| USERS | 40    |
-| SERVICES | 50    |
+| UAT | 10     |
+| PROD | 20   |
+| USERS | 30    |
+| SERVICES | 30    |
 
-This number will be used also when creating the proper subnets for each site as a third octet. We can show as example of full design of BUE site:
+This number will be used also when creating the proper subnets for each site as a third octet. When subnets are on the same vpn, we add 100 or 200 to the vpn ID. We can show as example of full design of BUE site. For services we include two subnets
 
 | Site    | ENV    | VPN ID | Subnet |
 | :--------| :--------| :-------: | :---: |
 | BUE    | DEV    | 10 | 10.1.10.0/24 |
-| BUE    | UAT    | 20 | 10.1.20.0/24 |
-| BUE    | PROD    | 30 | 10.1.30.0/24 |
-| BUE    | USERS    | 40 | 10.1.40.0/24 |
-| BUE    | SERVICES    | 50 | 10.1.50.0/24 |
+| BUE    | UAT    | 10 | 10.1.110.0/24 |
+| BUE    | PROD    | 20 | 10.1.20.0/24 |
+| BUE    | USERS    | 30 | 10.1.30.0/24 |
+| BUE    | SERVICES    | 30 | 10.1.130.0/24 |
+| BUE    | SERVICES_2    | 30 | 10.1.230.0/24 |
 
 For point to point connectivity internally to the site we will use /31 subnets within the range of 192.168.0.0/16. 
 
