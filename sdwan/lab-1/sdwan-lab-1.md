@@ -105,7 +105,7 @@ For the system IPs we will use the following and the org-id will be `guido-velez
 | WAW    | 1.1.1.31    | 31 |
 | KRK    | 1.1.1.41    | 41 |
 | WRO    | 1.1.1.51    | 51 |
-| WRO    | 1.1.1.61    | 61 |
+| BIE    | 1.1.1.61    | 61 |
 | KTW    | 1.1.1.71    | 71 |
 | controller    | 1.1.1.2    | 1 |
 | validator    | 1.1.1.3   | 1 |
