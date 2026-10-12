@@ -89,7 +89,7 @@ For the internet cloud we will use the range 100.64.0.0/24 with the last octet s
 | WAW    | 100.64.0.31/24    |
 | KRK    | 100.64.0.41/24    |
 | WRO    | 100.64.0.51/24    |
-| WRO    | 100.64.0.61/24    |
+| BIE    | 100.64.0.61/24    |
 | KTW    | 100.64.0.71/24    |
 | controller    | 100.64.0.100/24    |
 | validator    | 100.64.0.101/24    |
@@ -105,8 +105,8 @@ For the system IPs we will use the following and the org-id will be `guido-velez
 | WAW    | 1.1.1.31    | 31 |
 | KRK    | 1.1.1.41    | 41 |
 | WRO    | 1.1.1.51    | 51 |
-| WRO    | 1.1.1.51    | 61 |
-| KTW    | 1.1.1.61    | 71 |
+| WRO    | 1.1.1.61    | 61 |
+| KTW    | 1.1.1.71    | 71 |
 | controller    | 1.1.1.2    | 1 |
 | validator    | 1.1.1.3   | 1 |
 | manager    | 1.1.1.1    | 1 |
