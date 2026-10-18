@@ -1,0 +1,46 @@
+---
+sites:
+  - site_name: bue
+    site_id: 1
+  - site_name: cor
+    site_id: 11 
+  - site_name: mdz
+    site_id: 21
+  - site_name: waw
+    site_id: 31
+  - site_name: krk
+    site_id: 41
+  - site_name: wro
+    site_id: 51
+  - site_name: bie
+    site_id: 61
+  - site_name: ktw
+    site_id: 71
+
+envs:
+  - env_name: DEV 
+    vpn: 10
+    octet: 10
+  - env_name: UAT 
+    octet: 110 
+    vpn: 10
+  - env_name: PROD
+    octet: 20
+    vpn: 20
+  - env_name: USERS 
+    octet: 30
+    vpn: 30
+  - env_name: SERVICES 
+    octet: 130
+    vpn: 30
+  - env_name: SERVICES_2 
+    octet: 230
+    vpn: 30
+
+p2p_subnets:
+  - network: 192.168.1.10/31
+    site: bue
+    vpn: 10
+  - network: 192.168.11.10/31
+    site: cor
+    vpn: 10
