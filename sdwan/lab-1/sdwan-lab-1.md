@@ -33,7 +33,7 @@ Each internal site aggregate subnet will be a /16 from 10.0.0.0/8 where second o
 | BIE | 10.61.0.0/16    |
 | KTW | 10.71.0.0/16    |
 
-For each one of the subnets, the third octet will correspond with the vpn number, following the table
+For each one of the subnets, the relation with the vpn id is the following (on which vrf they are)
 
 | Environment    | VPN ID |
 | :--------| :-------: |
