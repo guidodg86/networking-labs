@@ -1,6 +1,6 @@
 int lo{{ loopback_number }}
+  ip vrf forwarding {{ vrf_name }}
   ip address {{ ip_address }} {{ mask }}
-  vrf forwarding {{ vrf_name }}
   no shut 
 !
 

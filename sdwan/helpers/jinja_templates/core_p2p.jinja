@@ -1,0 +1,7 @@
+int Gi0/0.{{ vlan }}
+  ip vrf forwarding {{ vrf_name }}
+  encapsulation dot1Q {{ vlan }}
+  ip address {{ ip_address }} {{ mask }}
+  no shut 
+!
+
