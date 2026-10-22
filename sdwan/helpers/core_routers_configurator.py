@@ -26,18 +26,34 @@ for env in context_data["envs"]:
 list_of_vpn = set (d_list_of_vpn)
 
 #Creating the bulk of subnets for each site and the vpn
+commands ={}
 for site in context_data["sites"]:
+    commands[site["site_name"]] = {}
+    commands[site["site_name"]]["vrf"] = []
+    commands[site["site_name"]]["loopbacks"] = []
     for vpn in list_of_vpn:
         vpn_name = f"vpn_{vpn}"
-        # Here need to render vrf/vpn template
+        vrf_command = template_vrf.render(
+            vrf_name = vpn_name)
+        commands[site["site_name"]]["vrf"].append(vrf_command)
     for i,env in enumerate(context_data["envs"]):
         ip_address = f"10.{site["site_id"]}.{env["octet"]}.1"
         mask = "255.255.255.0"
         vrf_name = f"vpn_ {env["vpn"]}"
-        # Here need to render the interface loopback command
+        loopback_command = template_loopback.render(
+            vrf_name = vrf_name,
+            loopback_number = i,
+            ip_address = ip_address, 
+            mask = mask)
+        commands[site["site_name"]]["loopbacks"].append(loopback_command) 
 
-        pass
 
 
+for site in commands:
+    with open(f"{file_dir}/results/core_routers/{site}_commands.txt", "w") as f:
+        for vrf in commands[site]["vrf"]:
+            f.write(vrf)
+        for loopback in commands[site]["loopbacks"]:
+            f.write(loopback)
 
 pass
