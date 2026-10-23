@@ -41,6 +41,7 @@ for site in context_data["sites"]:
             vrf_name = vpn_name)
         commands[site["site_name"]]["vrf"].append(vrf_command)
         ospf_command = template_ospf.render(
+            ospf_process = vpn_name,
             vrf_name = vpn_name)
         commands[site["site_name"]]["ospf"].append(ospf_command)
     for i,env in enumerate(context_data["envs"]):
