@@ -1,6 +1,7 @@
 int lo{{ loopback_number }}
   ip vrf forwarding {{ vrf_name }}
   ip address {{ ip_address }} {{ mask }}
+  ip ospf network point-to-point
   no shut 
 !
 
