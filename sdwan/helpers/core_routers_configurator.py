@@ -41,7 +41,9 @@ for site in context_data["sites"]:
         vrf_command = template_vrf.render(
             vrf_name = vpn_name)
         commands[site["site_name"]]["vrf"].append(vrf_command)
+        rid = f"{site["site_id"]}.{site["site_id"]}.{vpn}.253"
         ospf_command = template_ospf.render(
+            rid=rid,
             ospf_process = ospf_id,
             vrf_name = vpn_name)
         commands[site["site_name"]]["ospf"].append(ospf_command)
