@@ -36,9 +36,9 @@ for device in cedge_data["devices"]:
             system_ip=device["system-ip"],
             site_id=device["site-id"]
         )       
-    with open(f"{file_dir}/results/{device["hostname"]}_pre.txt", "w") as f:
+    with open(f"{file_dir}/results/onboarding/{device["hostname"]}_pre.txt", "w") as f:
         f.write(pre_commands)
-    with open(f"{file_dir}/results/{device["hostname"]}_post.txt", "w") as f:
+    with open(f"{file_dir}/results/onboarding/{device["hostname"]}_post.txt", "w") as f:
         f.write(post_commands)
 
 pass

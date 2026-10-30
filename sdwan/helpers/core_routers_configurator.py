@@ -1,7 +1,7 @@
 #imports
 from jinja2 import Environment, FileSystemLoader
 import yaml
-import os
+import csv
 
 #Getting current path
 path_current_file = __file__
@@ -82,6 +82,24 @@ for site in commands:
         for ospf_p in commands[site]["ospf"]:
             f.write(ospf_p)
 
+sdwan_data = []
+for site in context_data["sites"]:
+    for i,vpn in enumerate(list_of_vpn):
+        rid_sdwan = f"{site["site_id"]}.{site["site_id"]}.{vpn}.254"
+        ip_address_sdwan = f"192.168.{site["site_id"]}.{2*i+1}/31"
+        site_name = site["site_name"]
+        sdwan_data.append([
+            site_name,
+            vpn,
+            ip_address_sdwan,
+            rid_sdwan
+        ])
 
+import csv
+with open('/home/rodzina/networking-labs/sdwan/helpers/results/core_routers/sdwan_data.csv', 'w') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(["Site Name, vpn, RID, ip address"])
+    for element in sdwan_data:
+        writer.writerow(element)
 
 pass

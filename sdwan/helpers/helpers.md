@@ -35,4 +35,6 @@ devices:
 Here I used example values for all the fields. You need to replace this values with the real values.
 The script will assume that your interface Gi1 will be connected with mpls color and the IP/subnet you indicate.
 
-The script will generate two files for each device, one to be used when the device is in autonomous mode and the other for to use when the device is in controller mode.
+The script will generate two files for each device, one to be used when the device is in autonomous mode and the other for to use when the device is in controller mode. 
+
+It will generate the files in a directory named results, sub-directory named onboarding.

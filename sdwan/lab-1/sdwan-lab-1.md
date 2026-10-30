@@ -11,13 +11,13 @@ For this use case we are using one validator, one controller and one manager.
 ## Design constraints
 - Traffic between countries will be able to flow via Metro Ethernet or Internet. Metro should be preferable option.
 - Argentina should be HUB and SPOKE topology, where HUB is Buenos Aires (BUE)
-- Each site will contain one ubuntu machine for performing tests with ping, telnet, http requests and IPERF
+- Some sites will contain one ubuntu machine for performing tests with ping, telnet, http requests and IPERF
 - Despite of BUE and WAW site being reachable via MPLS this transport must not be used
 - Poland sites will form a full mesh topology
-- Poland edge devices are cEdge, and Argentina are vEdge
+- All devices are C8000v
 - Each site has a core router with /24 subnets as loopback and one more subnet with the ubuntu machine
 - We will have one subnet for each environment on each site. The Environments will be DEV, UAT, PROD, USERS and SERVICES.
-- Argentina sites will do OSPF with the SDWAN edges. Poland will do BGP.
+- All devices will do OSPF with the SDWAN edges.
 
 ## Subnetting and vpn scheme
 Each internal site aggregate subnet will be a /16 from 10.0.0.0/8 where second octet is site id:
@@ -111,3 +111,5 @@ For the system IPs we will use the following and the org-id will be `guido-velez
 | controller    | 1.1.1.2    | 1 |
 | validator    | 1.1.1.3   | 1 |
 | manager    | 1.1.1.1    | 1 |
+
+For the OSPF configuration we you can use the script in core_routers_configurator.py in helpers. There is detailed explanation there about how it works
